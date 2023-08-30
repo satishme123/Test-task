@@ -10,7 +10,7 @@ function App() {
       <ToastContainer position="top-center" />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<TableView />} />
+        <Route path="/task-table" element={<TableView />} />
       </Routes>
     </div>
   );

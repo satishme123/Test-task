@@ -22,7 +22,7 @@ function MainContent({ timeline }) {
         <p ref={(el) => (contentp = el)}>Test Management System</p>
         <h1 ref={(el) => (contenth1 = el)}>Welcome !</h1>
         <p ref={(el) => (contentp = el)}>
-          <Link to="/about" className="link">
+          <Link to="/task-table" className="link">
             Go to Task!
           </Link>
         </p>
