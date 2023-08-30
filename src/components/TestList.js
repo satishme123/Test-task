@@ -22,7 +22,10 @@ const TestList = ({ tests, onEdit, onDelete, setShowCreateTestType }) => {
   };
 
   return (
-    <TableContainer component={Paper} style={{ backgroundColor: "black" }}>
+    <TableContainer
+      component={Paper}
+      style={{ backgroundColor: "black", maxHeight: "90vh", overflow: "auto" }}
+    >
       <Table aria-label="Test List">
         <TableHead>
           <TableRow>
@@ -37,7 +40,7 @@ const TestList = ({ tests, onEdit, onDelete, setShowCreateTestType }) => {
           </TableRow>
         </TableHead>
         <TableBody>
-          {tests.map((test, index) => (
+          {tests?.map((test, index) => (
             <TableRow
               key={index}
               style={{
@@ -74,7 +77,7 @@ const TestList = ({ tests, onEdit, onDelete, setShowCreateTestType }) => {
           ))}
         </TableBody>
       </Table>
-      {tests.length === 0 && (
+      {tests?.length === 0 && (
         <div
           style={{
             display: "flex",

@@ -157,7 +157,7 @@ const TestForm = ({
             onChange={(e) => setType(e.target.value)}
           >
             <option value="">Select Test Type</option>
-            {testTypes.test_type.map((type, index) => (
+            {testTypes?.test_type?.map((type, index) => (
               <option key={index} value={type}>
                 {type}
               </option>
